@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+librosa
+scikit-learn
+numpy
+pandas
+python-multipart
+soundfile
+pydantic>=2,<3
+joblib
+pydub==0.25.1
+audioop-lts; python_version >= "3.13"

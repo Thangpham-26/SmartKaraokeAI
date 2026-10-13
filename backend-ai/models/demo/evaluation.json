@@ -1,0 +1,72 @@
+{
+  "device": "JBL K12 Plus",
+  "schema_version": "jbl-v2",
+  "trained_on_mock": true,
+  "evaluation_scope": "synthetic rule reproduction only",
+  "rows": 48,
+  "recording_groups": 8,
+  "train_rows": 36,
+  "test_rows": 12,
+  "train_groups": [
+    "nus48e_student_f1",
+    "nus48e_student_m1",
+    "vocalset_female1",
+    "vocalset_female2",
+    "vocalset_male2",
+    "vocalset_male3"
+  ],
+  "test_groups": [
+    "nus48e_student_f2",
+    "vocalset_male1"
+  ],
+  "group_overlap": [],
+  "feature_names": [
+    "mfcc_mean_0",
+    "mfcc_mean_1",
+    "mfcc_mean_2",
+    "mfcc_mean_3",
+    "mfcc_mean_4",
+    "mfcc_mean_5",
+    "mfcc_mean_6",
+    "mfcc_mean_7",
+    "mfcc_mean_8",
+    "mfcc_mean_9",
+    "mfcc_mean_10",
+    "mfcc_mean_11",
+    "mfcc_mean_12",
+    "pitch_estimate_hz",
+    "rt60_seconds"
+  ],
+  "target_names": [
+    "bass_pct",
+    "mid_pct",
+    "treble_pct",
+    "echo_level_pct",
+    "delay_ms",
+    "repeat_pct",
+    "reverb_level_pct"
+  ],
+  "model_mae_by_parameter": {
+    "bass_pct": 3.0,
+    "mid_pct": 0.0,
+    "treble_pct": 0.0,
+    "echo_level_pct": 0.0,
+    "delay_ms": 0.0,
+    "repeat_pct": 0.0,
+    "reverb_level_pct": 0.0
+  },
+  "baseline_mae_by_parameter": {
+    "bass_pct": 3.0,
+    "mid_pct": 0.0,
+    "treble_pct": 0.0,
+    "echo_level_pct": 0.0,
+    "delay_ms": 0.0,
+    "repeat_pct": 3.555555555555555,
+    "reverb_level_pct": 0.0
+  },
+  "fixed_reverb_mode": 2,
+  "mode_note": "Mode 2 is the only supported categorical value; it is not regressed.",
+  "mapping_status": "unverified",
+  "dataset_sha256": "fcecf57dc34e6091b7567d8ce3610e3c7376741e3f8f358567e3b733a52fa1a0",
+  "sklearn_version": "1.9.1"
+}
